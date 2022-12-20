@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*GENERAL*/
+.Body00{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Work Sans', sans-serif;
+}
+.Header00{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+.Main00{
+    width: 100%;
+    height: 75%;
+    overflow: auto;
+}
+.Footer00{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+}
+/*HEADER*/
+.logo{
+    height: 70%;
+    width: 100%;
+}
+.logoname{
+    font-size: 3rem;
+}
+.Header00 a{
+    text-decoration: none;
+    color: white;
+}
+/*MAIN*/
+iframe{
+    overflow: hidden;
+}
+
+/*FOOTER*/
+.logofoot{
+    width: 100%;
+    height: 40%;
+}
+.navMenu{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+.M_items{
+    display: flex;
+    list-style: none;
+}
+.M_items li a{
+    padding: 7px 60px;
+    text-decoration: none;
+    font-size: 2rem;
+    display: block;
+    color: white;
+}
+.logofoot1, .logofoot2{
+    display: none;
+}
+.M_items li:hover, li:active{
+    background-color: rgb(100, 100, 100);
+    transition: 0.5s;
+    border-radius: 20px;
+}
+@media screen and (min-width: 480px) and (orientation: landscape){
+    .logofoot{
+        display: none;
+    }
+    .logoname{
+        display: none;
+    }
+    .logo{
+        height: 90%;
+        position: relative;
+        top: 5%;
+    }
+    .navMenu{
+        height: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+    .M_items{
+        font-size: 1rem;
+    }
+    .M_items li a{
+        padding: 2px 60px;
+    }
+    .logofoot1, .logofoot2{
+        display: block;
+        width: 2%;
+        height: 90%;
+    }
+}
+@media screen and (min-width: 1328px){
+    .Body03{
+        margin: 0;
+        padding: 0;
+        width: 90%;
+        overflow-x: hidden;
+        box-sizing: content-box;
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo svg{
+        width: 10%;
+    }
+    .logoname{
+        display: block;
+    }
+}
