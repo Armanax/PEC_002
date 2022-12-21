@@ -210,7 +210,7 @@
 }
 .banner03{
     width: 100%;
-    height: 600px;
+    height: 350px;
 }
 .main03{
     width: 100%;
@@ -245,7 +245,7 @@
 @media screen and (min-width: 480px) and (orientation: landscape) {
     .banner03{
         width: 70%;
-        height: 350px;
+        height: 250px;
     }
     .textos03{
         width: 70%;
@@ -269,5 +269,3 @@
     }
 }
 
-
-/*ENLACES*/
