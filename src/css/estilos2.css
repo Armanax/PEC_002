@@ -85,6 +85,21 @@
         width: 80%;
         font-size: 1.5rem;
     }
+    #imagPort{
+        flex-direction: row;
+    }
+    #animalogo{
+        height: 300px;
+        width: 50%;
+    }
+    #lock{
+        height: 380px;
+        width: 35%;
+    }
+    #imagPort{
+        justify-content: center;
+    }
+    
 }
 @media screen and (min-width: 1328px) {
     #textopres{
@@ -97,7 +112,7 @@
 
     }
     #animalogo{
-        width: 30%;
+        width: 24%;
         height: 300px;
     }
     #lock{
