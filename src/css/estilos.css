@@ -24,7 +24,7 @@
 .Main00{
     width: 100%;
     height: 75%;
-    overflow: auto;
+    overflow: hidden;
 }
 .Footer00{
     width: 100%;
@@ -47,11 +47,6 @@
     text-decoration: none;
     color: white;
 }
-/*MAIN*/
-iframe{
-    overflow: hidden;
-}
-
 /*FOOTER*/
 .logofoot{
     width: 100%;
@@ -111,18 +106,9 @@ iframe{
     }
 }
 @media screen and (min-width: 1328px){
-    .Body03{
-        margin: 0;
-        padding: 0;
-        width: 90%;
-        overflow-x: hidden;
-        box-sizing: content-box;
-    }
     .logo{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
     .logo svg{
         width: 10%;
