@@ -71,7 +71,7 @@
 .logofoot1, .logofoot2{
     display: none;
 }
-.M_items li:hover, li:active{
+.M_items li:hover{
     background-color: rgb(100, 100, 100);
     transition: 0.5s;
     border-radius: 20px;

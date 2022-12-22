@@ -20,7 +20,6 @@
 
 .content0 img {
     clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
-
 }
 @media screen and (min-width: 480px) and (orientation: landscape) {
     .content0{
@@ -54,6 +53,12 @@
     width: 100%;
     height: auto;
 }
+#textopres{
+    text-align: justify;
+    font-size: 2rem;
+    width: 95%;
+    height: auto;
+}
 #imagPort{
     display: flex;
     flex-direction: column;
@@ -70,12 +75,6 @@
     margin: 2%;
     width: 50%;
     height: 600px;
-}
-#textopres{
-    text-align: justify;
-    font-size: 2rem;
-    width: 95%;
-    height: auto;
 }
 @media screen and (min-width: 480px) and (orientation: landscape) {
     .Body02 h1{
