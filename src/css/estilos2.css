@@ -164,9 +164,6 @@
     height: 100%;
     text-decoration: none;
 }
-.selector a:visited{
-    color: black;
-}
 @media screen and (min-width: 480px) and (orientation: landscape){
     .Body04{
         overflow: hidden;
