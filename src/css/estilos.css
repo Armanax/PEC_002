@@ -1,119 +1,308 @@
-*{
-    margin: 0;
-    padding: 0;
+@keyframes cora {
+    from { transform: none; }
+    50% { transform: scale(0.9); }
+    to { transform: none; }
 }
 /*GENERAL*/
-.Body00{
+body{
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
     width: 100vw;
     height: 100vh;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Work Sans', sans-serif;
+    overflow-x: hidden;
 }
-.Header00{
+.head00{
     width: 100%;
     height: 15%;
-    display: flex;
     background-color: black;
-    color: white;
-    justify-content: center;
-    text-align: center;
-}
-.Main00{
-    width: 100%;
-    height: 75%;
-    overflow: hidden;
-}
-.Footer00{
-    width: 100%;
-    height: 10%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    text-align: center;
-    background-color: black;
+    align-items: center;
 }
-/*HEADER*/
-.logo{
+.main00{
+    width: 100%;
     height: 70%;
+    overflow-y: auto;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+}
+.foot00{
     width: 100%;
+    height: 15%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.logoname{
-    font-size: 3rem;
+.content{
+    width: 95%;
+    height: auto;
 }
-.Header00 a{
-    text-decoration: none;
+/*BARRAS*/
+/*head*/
+.logo{
+    width: 40%;
+    height: 85%;
+}
+.svglogo{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+}
+.titlepage{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
     color: white;
 }
-/*FOOTER*/
-.logofoot{
-    width: 100%;
-    height: 40%;
+.titlepage a:link, .titlepage a:visited{
+    color: white;
+    text-decoration: none;
 }
-.navMenu{
-    width: 100%;
-    height: 50%;
+/*foot*/
+.mainmenu{
+    width: 98%;
+    height: 80%;
     display: flex;
 }
-.M_items{
+.logofoot00{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.options{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.options ul{
     display: flex;
     list-style: none;
+    padding: 0;
 }
-.M_items li a{
-    padding: 7px 60px;
+.options li{
+    font-size: 0.7rem;
+    padding: 15px;
+}
+.options a{
     text-decoration: none;
-    font-size: 2rem;
-    display: block;
+}
+.options a:link, .options a:visited{
     color: white;
 }
-.logofoot1, .logofoot2{
-    display: none;
-}
-.M_items li:hover{
+.options li:hover, .options li:active{
     background-color: rgb(100, 100, 100);
     transition: 0.5s;
     border-radius: 20px;
 }
-@media screen and (min-width: 480px) and (orientation: landscape){
-    .logofoot{
-        display: none;
+/*MEDIA*/
+@media screen and (min-width: 1328px){
+    .logofoot00{
+        width: 4%;
     }
-    .logoname{
-        display: none;
+    .options{
+        width: 92%;
     }
-    .logo{
-        height: 90%;
-        position: relative;
-        top: 5%;
-    }
-    .navMenu{
-        height: 90%;
-        justify-content: center;
-        align-items: center;
-    }
-    .M_items{
-        font-size: 1rem;
-    }
-    .M_items li a{
-        padding: 2px 60px;
-    }
-    .logofoot1, .logofoot2{
-        display: block;
-        width: 2%;
-        height: 90%;
+    .options li{
+        font-size: 2rem;
+        padding: 15px;
+        margin-right: 35px;
     }
 }
+/*01_INDEX*/
+.imgiglesia01{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.imgg01{
+    width: 100%;
+    height: 100%;
+}
+.imgg01 img{
+    clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+}
+/*MEDIA*/
 @media screen and (min-width: 1328px){
-    .logo{
+    .imgiglesia01{
+        width: 40%;
+    }
+}
+/*02_PRESENT*/
+.present02{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title02{
+    margin: 0;
+}
+.text02{
+    text-align: justify;
+    line-height: 1.5;
+}
+.imganes02{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.animatedflag02{
+    width: 95%;
+    height: 200px;
+    text-align: center;
+}
+.mappresent02{
+    width: 95%;
+    height: 500px;
+    text-align: center;
+}
+.animatedflag02 img{
+    animation: cora .9s infinite;
+}
+/*MEDIA*/
+@media screen and (min-width: 1328px){
+    .content{
         display: flex;
-        flex-direction: column;
+        justify-content: center;
     }
-    .logo svg{
-        width: 10%;
+    .present02{
+        width: 50%;
     }
-    .logoname{
-        display: block;
+    .imganes02{
+        flex-direction: row;
+    }
+    .animatedflag02{
+        width: 50%;
+        height: 220px;
+    }
+    .mappresent02{
+        width: 50%;
+        height: 400px;
+    }
+}
+/*03_CATEGO*/
+.catego03{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.options03{
+    width: 70%;
+    height: auto;
+}
+.options0301{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    background-color: rgb(236, 131, 131);
+}
+.options0302{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    background-color: rgb(236, 131, 131);
+}
+.imgoption03{
+    width: 100%;
+    height: 80%;
+    border-bottom: 2px solid black;
+}
+.titleoption03{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titleoption03 p{
+    margin: 0;
+}
+/*MEDIA*/
+@media screen and (min-width: 1328px){
+    .catego03{
+        width: 20%;
+    }
+}
+
+/*04_DETALLE1*/
+.historia04{
+    width: 100%;
+    height: auto;
+}
+.banner04{
+    width: 100%;
+    height: 150px;
+}
+.textos04{
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    line-height: 1.5;
+}
+.textos04 ul{
+    padding: 0px 0px 0px 20px;
+
+}
+.imghist04{
+    width: 100%;
+    height: 850px;
+    margin-bottom: 60px;
+}
+.photo0401{
+    width: 100%;
+    height: 50%;
+    margin: 0px 0px 25px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.photo0402{
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+/*MEDIA*/
+@media screen and (min-width: 1328px){
+    .historia04{
+        width: 50%;
+    }
+    .banner04{
+        height: 500px;
+    }
+    .imghist04{
+        display: flex;
+        height: 400px;
+    }
+    .photo0401{
+        width: 50%;
+        height: 100%;
+    }
+    .photo0402{
+        width: 50%;
+        height: 100%;
     }
 }
