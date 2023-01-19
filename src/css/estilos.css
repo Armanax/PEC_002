@@ -124,6 +124,7 @@ body{
     height: 100%;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 .imgg01{
     width: 100%;
