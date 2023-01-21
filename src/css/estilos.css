@@ -90,7 +90,7 @@ body{
     padding: 0;
 }
 .options li{
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     padding: 15px;
 }
 .options a{
@@ -129,12 +129,25 @@ body{
 .imgg01{
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .imgg01 img{
     clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
 }
 /*MEDIA*/
+@media screen and (min-width: 0px){
+    .imgg01 img{
+        width: 342px;
+        height: 448px;
+    }
+}
 @media screen and (min-width: 1328px){
+    .imgg01 img{
+        width: 385px;
+        height: 658px;
+    }
     .imgiglesia01{
         width: 30%;
     }
